@@ -1,7 +1,7 @@
 Dashboard
 =========
 
-Copyright (c) 2014, Intel Corporation, Jaguar Land Rover
+Copyright (c) 2014, Intel Corporation, Jaguar Land Rover, Konsulko Group
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -25,9 +25,8 @@ Build Instructions:
   * make install.feb1 - To build and install wigits on the platform
   * make run.feb1 - To build, install and run on the platform
 
-KnownIssues: 
+KnownIssues:
   * Dashboard signals simulator plugin (randommizer)
   * Dashboard - Average consumption level is not changed when randomizer is active
   * When trying to switch between applications they hide and cannot be brought back into foreground
   * Not connected to a car
-

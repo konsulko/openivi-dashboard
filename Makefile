@@ -1,4 +1,4 @@
-PROJECT = JLRPOCX033.Dashboard
+PROJECT = OPENIVI033.Dashboard
 INSTALL_FILES = images js icon.png index.html
 WRT_FILES = DNA_common css icon.png index.html images setup config.xml js manifest.json README.txt
 VERSION := 0.0.1
@@ -9,6 +9,9 @@ SEND := ~/send
 ifndef TIZEN_IP
 TIZEN_IP=TizenVTC
 endif
+
+dev: clean dev-common
+	zip -r $(PROJECT).wgt config.xml css icon.png index.html js images DNA_common
 
 wgtPkg: common
 	zip -r $(PROJECT).wgt config.xml css icon.png index.html js DNA_common images
@@ -56,15 +59,25 @@ ifndef OBS
 	scp $(PROJECT).wgt app@$(TIZEN_IP):/home/app
 endif
 
-common: /opt/usr/apps/common-apps
-	cp -r /opt/usr/apps/common-apps DNA_common
-
-dev-common: ../common-app
-	cp -rf ../common-app DNA_common
-
 all:
 	@echo "Nothing to build"
 
 clean:
 	-rm -f $(PROJECT).wgt
 	-rm -rf DNA_common
+
+common: /opt/usr/apps/openivi-common-apps
+	cp -r /opt/usr/apps/openivi-common-apps DNA_common
+
+/opt/usr/apps/openivi-common-apps:
+	@echo "Please install Common Assets"
+	exit 1
+
+dev-common: ../openivi-common-app
+	cp -rf ../openivi-common-app ./DNA_common
+	rm -rf DNA_common/.git
+
+../openivi-common-app:
+	#@echo "Please checkout Common Assets"
+	#exit 1
+	git clone  git@github.com:konsulko/openivi-common-app.git ../openivi-common-app
