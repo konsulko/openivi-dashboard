@@ -3,7 +3,7 @@
 * Proprietary and confidential
 * Unauthorized copying of this file, via any medium, is strictly prohibited
 *
-* THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY 
+* THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY
 * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
 * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
 * PARTICULAR PURPOSE.
@@ -18,11 +18,11 @@
 *
 */
 
-/*//////////// Primary Containers ////////////*/ 
+/*//////////// Primary Containers ////////////*/
 
 /* Use left and right push for adjusting the amount of space between the edge of the screen and the graphics on either the left or right side of Dashboard.*/
 
-/*//////////// Global Text ////////////*/ 
+/*//////////// Global Text ////////////*/
 
 h5 {
 	margin-left: 50px;
@@ -42,7 +42,7 @@ h6 {
 	margin: 0px 0px 0px -3px;
 }
 
-/*//////////// Global Lists ////////////*/ 
+/*//////////// Global Lists ////////////*/
 
 ul {
 	margin: 18px 0px 0px 31px;
@@ -54,7 +54,7 @@ li {
 	list-style: square;
 }
 
-/*//////////// 01. Speed, Fuel and Temperature Elements ////////////*/ 
+/*//////////// 01. Speed, Fuel and Temperature Elements ////////////*/
 
 
 #speed-fuel-temp-container {
@@ -176,7 +176,7 @@ li {
 	color: rgba(205,255,178, .8);
 }
 
-/*//////////// 02. Tire Pressure Elements ////////////*/ 
+/*//////////// 02. Tire Pressure Elements ////////////*/
 
 #tire-pressure-container {
 	position: relative;
@@ -219,7 +219,7 @@ li {
 	height: 35px;
 }
 
-/*//////////// 03. Vehicle Graphics ////////////*/ 
+/*//////////// 03. Vehicle Graphics ////////////*/
 
 
 #vehicle-graphic-switches {
@@ -230,7 +230,7 @@ li {
 
 .rangeRoverVehicle {
 	width: 100%;
-	height: 830px;
+	height: 600px;
 	margin-top: 40px;
 	background-image: url('../images/Range_Rover_Outline_Call_Outs.png');
 	background-position: top center;
@@ -240,7 +240,7 @@ li {
 
 .lr4Vehicle {
 	width: 100%;
-	height: 830px;
+	height: 600px;
 	margin-top: 35px;
 	background-image: url('../images/LR4_Outline_Call_Outs.png');
 	background-position: top center;
@@ -250,7 +250,7 @@ li {
 
 .fTypeVehicle {
 	width: 100%;
-	height: 830px;
+	height: 600px;
 	margin-top: 27px;
 	background-image: url('../images/F-Type_Call_Outs.png');
 	background-position: top center;
