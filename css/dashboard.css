@@ -31,12 +31,16 @@ h5 {
 }
 
 h6 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 	color: #B2F0FF;
 	text-transform: initial;
+	margin: 2px 0px 8px 0px;
 }
+
 .psi-text {
-	font-size: 2.3rem;
+	font-size: 2rem;
+	margin: 0px;
+	margin: 2px 0px 2px 0px;
 }
 
 .unit-description {
@@ -186,7 +190,6 @@ li {
 
 #tire-pressure-container {
 	position: relative;
-	/*top: -33px;*/
 }
 
 .tire-pressure-data {
@@ -196,21 +199,21 @@ li {
 }
 
 .right-PSI {
-	right: 20px;
+	right: 205px;
 }
 
 .left-PSI {
-	left: 125px;
+	left: 305px;
 }
 
 .front-tire-data {
 	position: absolute;
-	top: 286px;
+	top: -246px;
 }
 
 .rear-tire-data {
 	position: absolute;
-	top: 564px;
+	top: -34px;
 }
 
 .PSI-status-position {
@@ -221,12 +224,16 @@ li {
 
 .PSI-status-OK {
 	background-image: url('../images/Status_OK.png');
-	width: 35px;
-	height: 35px;
+	width: 25px;
+	height: 25px;
 }
 
 /*//////////// 03. Vehicle Graphics ////////////*/
 
+#vehicle-graphic {
+	position: absolute;
+	margin-top: -240px;
+}
 
 #vehicle-graphic-switches {
 	display: flex;
@@ -236,11 +243,10 @@ li {
 
 .rangeRoverVehicle {
 	width: 100%;
-	/*height: 600px;
-	margin-top: 40px;
+	height: 360px;
 	background-image: url('../images/Range_Rover_Outline_Call_Outs.png');
 	background-position: top center;
-	background-repeat: no-repeat;*/
+	background-repeat: no-repeat;
 	flex: 1 0 auto;
 }
 
